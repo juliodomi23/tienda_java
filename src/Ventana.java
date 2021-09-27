@@ -38,8 +38,10 @@ public class Ventana extends JFrame{
        
       Panel();
       Etiquetas();
+      Etiquetas_vendedores();
+      Etiquetas_imagenes();
       Botones();
-
+      
     }
     
     private void Panel(){
@@ -62,13 +64,6 @@ public class Ventana extends JFrame{
         panel_principal.add(bienvenida);
         
         
-       ImageIcon imagen4 = new ImageIcon("imagenes/tablets.jgp");
-       JLabel imagen_tablet = new JLabel();
-       imagen_tablet.setBounds(700,400,200,200);
-       imagen_tablet.setIcon(new ImageIcon(imagen4.getImage().getScaledInstance(200,200,Image.SCALE_SMOOTH)));
-        
-        panel_principal.add(imagen_tablet);
-        
     
     }
     
@@ -77,7 +72,7 @@ public class Ventana extends JFrame{
         boton1.setText("Computadoras");
         boton1.setBounds(50,300,200,90);
         boton1.setEnabled(true);
-        boton1.setMnemonic('4'); //shortcut alt+
+        boton1.setMnemonic('1'); //shortcut alt+
         //boton1.setForeground(Color.red);
         boton1.setFont(new Font("arial",0,20));
         
@@ -88,21 +83,19 @@ public class Ventana extends JFrame{
         boton2.setText("Celulares");
         boton2.setBounds(300,300,200,90);
         boton2.setEnabled(true);
-        boton2.setMnemonic('4'); //shortcut alt+
+        boton2.setMnemonic('2'); //shortcut alt+
         //boton1.setForeground(Color.red);
         boton2.setFont(new Font("arial",0,20));
         
         
         panel_principal.add(boton2);
        
-        
 
-        
         JButton boton3 = new JButton();
         boton3.setText("Audio");
         boton3.setBounds(525,300,200,90);
         boton3.setEnabled(true);
-        boton3.setMnemonic('4'); //shortcut alt+
+        boton3.setMnemonic('3'); //shortcut alt+
         //boton1.setForeground(Color.red);
         boton3.setFont(new Font("arial",0,20));
         
@@ -127,6 +120,67 @@ public class Ventana extends JFrame{
         //boton2.setIcon(new ImageIcon(tablet.getImage().getScaledInstance(boton2.getWidth(), boton2.getHeight(),Image.SCALE_SMOOTH )));
         
         //panel_principal.add(boton2);
+    }
+    
+    private void Etiquetas_vendedores(){
+        JLabel vendedor1 = new JLabel();
+        vendedor1.setText("Vendedor:Carlos Laires");
+        vendedor1.setBounds(60,200,200,100);
+        vendedor1.setFont(new Font("Titulo",Font.BOLD,15));
+        
+        panel_principal.add(vendedor1);
+        
+        JLabel vendedor2 = new JLabel();
+        vendedor2.setText("Vendedor:Luis Melchor");
+        vendedor2.setBounds(310,200,200,100);
+        vendedor2.setFont(new Font("Titulo",Font.BOLD,15));
+        
+        panel_principal.add(vendedor2);
+        
+        JLabel vendedor3 = new JLabel();
+        vendedor3.setText("Vendedor:Aspasia Prieto");
+        vendedor3.setBounds(535,200,200,100);
+        vendedor3.setFont(new Font("Titulo",Font.BOLD,15));
+        
+        panel_principal.add(vendedor3);
+        
+        JLabel vendedor4 = new JLabel();
+        vendedor4.setText("Vendedor:Julio Dominguez");
+        vendedor4.setBounds(750,200,200,100);
+        vendedor4.setFont(new Font("Titulo",Font.BOLD,15));
+        
+        panel_principal.add(vendedor4);
+        }
+    
+    private void Etiquetas_imagenes(){
+    
+    ImageIcon computadoras = new ImageIcon("imagenes/computadoras.jpg");
+    JLabel imagen_compu = new JLabel (computadoras);
+    imagen_compu.setBounds(50,450,200,250);
+    imagen_compu.setIcon(new ImageIcon(computadoras.getImage().getScaledInstance(imagen_compu.getWidth(), imagen_compu.getHeight(),Image.SCALE_SMOOTH)));
+    
+    panel_principal.add(imagen_compu);
+    
+    ImageIcon celulares = new ImageIcon("imagenes/celulares.jpg");
+    JLabel imagen_cel = new JLabel (celulares);
+    imagen_cel.setBounds(300,450,200,250);
+    imagen_cel.setIcon(new ImageIcon(celulares.getImage().getScaledInstance(imagen_cel.getWidth(), imagen_cel.getHeight(),Image.SCALE_SMOOTH)));
+    
+    panel_principal.add(imagen_cel);
+    
+    ImageIcon audio = new ImageIcon("imagenes/audio.jpg");
+    JLabel imagen_audio = new JLabel (audio);
+    imagen_audio.setBounds(525,450,200,250);
+    imagen_audio.setIcon(new ImageIcon(audio.getImage().getScaledInstance(imagen_audio.getWidth(), imagen_audio.getHeight(),Image.SCALE_SMOOTH)));
+    
+    panel_principal.add(imagen_audio);
+    
+    ImageIcon tablets = new ImageIcon("imagenes/tablets.jpg");
+    JLabel imagen_tablet = new JLabel (tablets);
+    imagen_tablet.setBounds(750,450,200,250);
+    imagen_tablet.setIcon(new ImageIcon(tablets.getImage().getScaledInstance(imagen_tablet.getWidth(), imagen_tablet.getHeight(),Image.SCALE_SMOOTH)));
+    
+    panel_principal.add(imagen_tablet);
     }
 }
 
