@@ -16,8 +16,8 @@ public class tablet {
     private Processor processor;
     private Main_Controller controller;
 
-    
-public tablet(int Id,String Marca,String SNumber,float precio,Ram_Memory ram,Rom_Memory rom,Camera cam,Processor processor,Main_Controller controller){
+                                                            //,Ram_Memory ram,Rom_Memory rom,Camera cam,Processor processor,Main_Controller controller
+public tablet(int Id,String Marca,String SNumber,float precio){
     Id=id;
     Marca=marca;
     SNumber=serialNumber;
@@ -28,5 +28,7 @@ public tablet(int Id,String Marca,String SNumber,float precio,Ram_Memory ram,Rom
     processor=processor;
     controller=controller;
     }
+
+tablet tablet1 = new tablet (1,"Samsung","1N2M3B",(float)1599.99);
 
 }
