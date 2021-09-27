@@ -74,8 +74,8 @@ public class Ventana extends JFrame{
     
     private void Botones(){
         JButton boton1 = new JButton();
-        boton1.setText("Tablets");
-        boton1.setBounds(700,300,200,90);
+        boton1.setText("Computadoras");
+        boton1.setBounds(50,300,200,90);
         boton1.setEnabled(true);
         boton1.setMnemonic('4'); //shortcut alt+
         //boton1.setForeground(Color.red);
@@ -84,15 +84,49 @@ public class Ventana extends JFrame{
         
         panel_principal.add(boton1);
         
-       
-        
         JButton boton2 = new JButton();
-        boton2.setBounds(400,300,200,90);
-        //boton2.setBackground(Color.gray);
-        ImageIcon tablet = new ImageIcon("imagenes/tablet.png");
-        boton2.setIcon(new ImageIcon(tablet.getImage().getScaledInstance(boton2.getWidth(), boton2.getHeight(),Image.SCALE_SMOOTH )));
+        boton2.setText("Celulares");
+        boton2.setBounds(300,300,200,90);
+        boton2.setEnabled(true);
+        boton2.setMnemonic('4'); //shortcut alt+
+        //boton1.setForeground(Color.red);
+        boton2.setFont(new Font("arial",0,20));
+        
         
         panel_principal.add(boton2);
+       
+        
+
+        
+        JButton boton3 = new JButton();
+        boton3.setText("Audio");
+        boton3.setBounds(525,300,200,90);
+        boton3.setEnabled(true);
+        boton3.setMnemonic('4'); //shortcut alt+
+        //boton1.setForeground(Color.red);
+        boton3.setFont(new Font("arial",0,20));
+        
+        
+        panel_principal.add(boton3);
+        
+        JButton boton4 = new JButton();
+        boton4.setText("Tablets");
+        boton4.setBounds(750,300,200,90);
+        boton4.setEnabled(true);
+        boton4.setMnemonic('4'); //shortcut alt+
+        //boton1.setForeground(Color.red);
+        boton4.setFont(new Font("arial",0,20));
+        
+        
+        panel_principal.add(boton4);
+        
+        //JButton boton2 = new JButton();
+        //boton2.setBounds(500,300,200,90);
+        //boton2.setBackground(Color.gray);
+        //ImageIcon tablet = new ImageIcon("imagenes/tablet.png");
+        //boton2.setIcon(new ImageIcon(tablet.getImage().getScaledInstance(boton2.getWidth(), boton2.getHeight(),Image.SCALE_SMOOTH )));
+        
+        //panel_principal.add(boton2);
     }
 }
 
